@@ -1,2 +1,3 @@
 # Head-First-JavaScript
-Head First JavaScript Programming
+
+Head First JavaScript Programming Book
