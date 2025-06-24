@@ -105,3 +105,4 @@ letsSee("Brad");
 
 console.log(points); // 1111
 // console.log(message); // Error: message not defined
+
