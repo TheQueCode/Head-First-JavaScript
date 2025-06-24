@@ -63,3 +63,45 @@ function calculateArea (radius) {
 let theArea = calculateArea(radius);
 
 console.log(`The area is ${theArea}.`);
+
+
+let avatar = 'generic';
+let skill = 1.0;
+let pointsPerLevel = 1000;
+let userPoints = 2008;
+
+function getAvatar (points) {
+  let level = points / pointsPerLevel;
+
+  if (level == 0) {
+    return "Teddy Bear";
+  } else if (level == 1) {
+    return "Cat";
+  } else if (level >= 2) {
+    return "Gorilla";
+  }
+}
+
+function updatePoints (bonus, newPoints) {
+  let i = 0;
+  while (i < bonus) {
+    newPoints = newPoints + skill * bonus;
+    i++;
+  }
+  return newPoints + userPoints;
+}
+
+console.log(updatePoints(2, 100));
+console.log(getAvatar(2112));
+
+
+function letsSee (player) {
+  points = 1111;
+  let message = `can console log read this?`;
+  console.log(player);
+}
+
+letsSee("Brad");
+
+console.log(points); // 1111
+// console.log(message); // Error: message not defined
