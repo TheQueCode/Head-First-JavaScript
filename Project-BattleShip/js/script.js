@@ -23,7 +23,7 @@ while (isSunk == false) {
         console.log('You sank my Battleship!');
       }
     } else {
-      console.log("MISS!");
+      console.log("MISS!");5
     }
     
   }
