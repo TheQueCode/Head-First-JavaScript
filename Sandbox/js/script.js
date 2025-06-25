@@ -138,3 +138,37 @@ function display (output) {
 let clunkCounter = 0;
 thingamajig();
 console.log(clunkCounter);
+
+
+function makePhrases () {
+  let words1 = ["24/7", "multi-tier", "30,000 foot", "B-to-B", "win-win"];
+  let words2 = ["empowered", "value-added", "oriented", "focused", "aligned"];
+  let words3 = ["process", "solution", "tipping point", "strategy", "vision"];
+  let words4 = ["synergy", "paradigm shift", "core competency", "best practices", "game-changer"];
+  let words5 = ["scalable", "turnkey", "roadmap", "framework", "ecosystem"];
+  let words6 = ["leverage", "optimize", "iterate", "pivot", "streamline"];
+  let words7 = ["innovative", "thought leadership", "holistic", "robust", "mission-critical"];
+  let words8 = ["results-driven", "agile", "dynamic", "forward-thinking", "data-informed"];
+  let words9 = ["circle back", "move the needle", "drink the kool-aid", "blue sky thinking", "boil the ocean"];
+  let words10 = ["value proposition", "empower the brand", "create alignment", "monetize", "deliverables"];
+
+  let rand1 = Math.floor(Math.random() * words1.length);
+  let rand2 = Math.floor(Math.random() * words2.length);
+  let rand3 = Math.floor(Math.random() * words3.length);
+  let rand4 = Math.floor(Math.random() * words4.length);
+  let rand5 = Math.floor(Math.random() * words5.length);
+  let rand6 = Math.floor(Math.random() * words6.length);
+  let rand7 = Math.floor(Math.random() * words7.length);
+  let rand8 = Math.floor(Math.random() * words8.length);
+  let rand9 = Math.floor(Math.random() * words9.length);
+  let rand10 = Math.floor(Math.random() * words10.length);
+  
+  function pickRandom (arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  let phrase = `We need a ${pickRandom(words1)}, ${pickRandom(words2)} ${pickRandom(words3)} that drives ${pickRandom(words4)} through a ${pickRandom(words5)} approach. Let's ${pickRandom(words6)} our ${pickRandom(words7)} and stay ${pickRandom(words8)} as we ${pickRandom(words9)} toward our ${pickRandom(words10)}.`
+  console.log(phrase);
+}
+
+makePhrases();
