@@ -186,3 +186,4 @@ function max (nums) {
 }
 
 max(scores);
+
