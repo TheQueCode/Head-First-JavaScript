@@ -180,3 +180,9 @@ for (let i = 0; i < scores.length; i++){
   console.log(output);
 }
 
+function max (nums) {
+  const output = Math.max(...nums)
+  console.log(output);
+}
+
+max(scores);
